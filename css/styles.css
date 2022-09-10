@@ -1,0 +1,44 @@
+:root {
+    --color-01: #fff;
+    --color-02: #0C306C;
+}
+
+/* Geral */
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
+#navbar {
+    position: relative;
+    height: 60px;
+    background-color: var(--color-02);
+}
+
+.alin-icon-glpi {
+    position: absolute;
+    width: 50px;
+    margin: 5px 0 5px 10px;
+}
+
+.config-icon {
+    width: 50px;
+}
+
+#social-bar{
+    float: right;
+    padding: 0 25px;
+}
+
+.nav-list li {
+    margin: 10px;
+    display: inline-flex;
+    text-decoration-line: none;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: var(--color-01);
+}
