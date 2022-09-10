@@ -1,15 +1,59 @@
 :root {
     --color-01: #fff;
     --color-02: #0C306C;
+    --color-03: rgba(72, 122, 180, .7);
+
+    --circle-wrap-height: 300px;
+    --circle-wrap-width: 300px;
 }
 
-/* Geral */
+/* Configuração Geral */
 
 body {
     font-family: arial, sans-serif;
     font-size: 13px;
     margin: 0;
+    overflow-x: hidden;
 }
+
+.container {
+    width: 1480px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+.alin-element-center .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.alin-element-center .col {
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/* Navbar */
 
 #navbar {
     position: relative;
@@ -27,7 +71,7 @@ body {
     width: 50px;
 }
 
-#social-bar{
+#social-bar {
     float: right;
     padding: 0 25px;
 }
@@ -38,7 +82,126 @@ body {
     text-decoration-line: none;
 }
 
-.nav-list a{
+.nav-list a {
     text-decoration: none;
     color: var(--color-01);
+}
+
+/* Card Contador */
+
+.card-contador-dashbord {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    height: 100px;
+    width: 350px;
+    padding: 5px;
+    background: var(--color-03);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 0 5px #aaa inset;
+    border: 5px outset;
+    border-radius: 10px;
+}
+
+/* Grafico de pizza */
+
+.alin-title-dasboard {
+    text-align: center;
+    margin: 10px;
+}
+
+.alin-grafico {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    background: var(--color-03);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 0 5px #aaa inset;
+    border: 5px outset;
+    border-radius: 10px;
+}
+
+.piechart {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-image: 
+    conic-gradient(
+            pink 70deg,
+            lightblue 0 235deg,
+            orange 0);
+            animation: rotate ease-in-out 3s both;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(100deg);
+    }
+}
+
+
+/* ProgressBar cirlce */
+
+.circle-wrap {
+    margin: 150px auto;
+    height: var(--circle-wrap-height);
+    width: var(--circle-wrap-width);
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+    height: var(--circle-wrap-height);
+    width: var(--circle-wrap-width);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.mask .fill {
+    clip: rect(0px, 200px, 400px, 0px);
+    background-color: #227ded;
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 400px, 400px, 200px);
+}
+
+.mask.full,
+.circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+}
+
+@keyframes fill {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+.circle-wrap .inside-circle {
+    height: 272px;
+    width: 272px;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
 }
