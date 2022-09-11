@@ -104,11 +104,6 @@ h6 {
 
 /* Grafico de pizza */
 
-.alin-title-dasboard {
-    text-align: center;
-    margin: 10px;
-}
-
 .alin-grafico {
     position: relative;
     display: flex;
@@ -146,7 +141,7 @@ h6 {
 }
 
 
-/* ProgressBar cirlce */
+/* ProgressBar circle */
 
 .circle-wrap {
     margin: 150px auto;
@@ -204,4 +199,10 @@ h6 {
     z-index: 100;
     font-weight: 700;
     font-size: 2em;
+}
+
+/* Configuração icons */ 
+
+.fa-right-from-bracket {
+    font-size: 25px;
 }

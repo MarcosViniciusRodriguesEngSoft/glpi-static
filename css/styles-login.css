@@ -1,0 +1,194 @@
+:root {
+    --color-01: #fff;
+    --color-02: #0C306C;
+    --color-03: rgba(72, 122, 180, .7);
+}
+
+/* HTML login */
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+#background-gif {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.inner-container {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+    color: #fff;
+    background: var(--color-03);
+    padding: 5px 5px;
+}
+
+.box h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.box input {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--color-01);
+    border: 0;
+}
+
+.box input:focus,
+.box input:active,
+.box button:focus,
+.box button:active {
+    outline: none;
+}
+
+.box button {
+    background: var(--color-02);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    width: 330px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.box button:active {
+    background: var(--color-03);
+}
+
+.box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-01);
+}
+
+.config-icon {
+    width: 100px;
+}
+
+.config-icon:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23), 0 0 5px #aaa inset;
+    border: 5px outset;
+    border-radius: 10px;
+}
+
+/* HTML redefinir senha do usuário */
+
+.inner-container-reset {
+    width: 400px;
+    height: 450px;
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    overflow: hidden;
+}
+
+.box-reset {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+    color: #fff;
+    background: var(--color-03);
+    padding: 5px 5px;
+}
+
+.box-reset h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.box-reset input {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: 0;
+}
+
+.box-reset input:focus,
+.box-reset input:active,
+.box-reset button:focus,
+.box-reset button:active {
+    outline: none;
+}
+
+.alin-button-reset .row {
+    justify-content: center;
+}
+
+.alin-button-reset .col {
+    margin: 5px;
+}
+
+.box-reset button {
+    background: var(--color-02);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    width: 165px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+}
+
+.box-reset button:active {
+    background: var(--color-03);
+}
+
+.box-reset a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #666;
+}
