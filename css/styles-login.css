@@ -183,12 +183,67 @@ body {
     background: var(--color-03);
 }
 
-.box-reset a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    text-decoration: none;
-    cursor: pointer;
-    color: #666;
+@media (max-width: 600px) {
+
+    /* HTML login */
+
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .box {
+        width: 80%;
+        margin: auto;
+    }
+
+    .box input {
+        width: 250px;
+        margin: 10px auto;
+    }
+
+    .box button {
+        width: 280px;
+    }
+
+    .inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* HTML redefinir senha do usuário */
+
+    .container-reset {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .box-reset {
+        width: 80%;
+        margin: auto;
+    }
+
+    .box-reset form {
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .box-reset input {
+        width: 250px;
+        margin: 10px auto;
+    }
+
+    .box-reset button {
+        width: 280px;
+    }
+
+    .inner-container-reset {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

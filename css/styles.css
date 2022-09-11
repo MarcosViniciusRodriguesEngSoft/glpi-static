@@ -20,17 +20,20 @@ body {
     width: 1480px;
     padding: 20px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 
-.alin-element-center .row {
+.alin-element-center-contador .row,
+.alin-element-center-grafico .row {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 
-.alin-element-center .col {
+.alin-element-center-contador .col,
+.alin-element-center-grafico .row {
     margin: 5px;
 }
 
@@ -205,4 +208,39 @@ h6 {
 
 .fa-right-from-bracket {
     font-size: 25px;
+}
+
+@media (max-width: 600px) {
+
+    /* HTML login */
+
+    .container {
+        width: max-content;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .card-contador-dashbord {
+        height: 50px;
+        width: 150px;
+    }
+
+    .alin-element-center-contador {
+        display: flex;
+    }
+
+    .alin-element-center-grafico .row{
+margin: 0 auto;
+    }
+
+    .row, .row h1, .row h2 {
+        font-size: 1.2rem;
+        flex-direction: column !important;
+    }
+
+    .alin-grafico {
+        height: 350px;
+        width: 350px;
+    }
+    
 }
